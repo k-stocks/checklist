@@ -28,3 +28,24 @@
 
 /* Night futures remain in the summary; only external links are shown, no chart cards. */
 .night-futures-links{padding:16px;margin-top:18px}.night-futures-links .section-heading{margin-bottom:10px}.night-link-row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0;border-top:1px solid #edf0f5;font-size:14px}.night-link-row a{color:#2563c7;text-decoration:none;font-weight:600;white-space:nowrap}.night-link-row a:hover{text-decoration:underline}
+
+/* Larger, clearer pre-market summary typography and inline night-futures chart links. */
+.summary-titleline{display:flex;align-items:center;justify-content:space-between;gap:5px;min-width:0;margin-bottom:6px}
+.summary-titleline .summary-label{margin:0;min-width:0;font-size:16px;font-weight:800;line-height:1.25;letter-spacing:-.2px}
+.summary-chart-link{flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;padding:5px 9px;border-radius:6px;background:#263e60;color:#fff;text-decoration:none;font-size:12px;font-weight:800;line-height:1.2}
+.summary-chart-link:active{opacity:.8}
+.summary-price{font-size:18px;font-weight:800}
+.summary-change{font-size:15px;font-weight:650}
+@media(max-width:520px){.summary-titleline{gap:3px;margin-bottom:5px}.summary-titleline .summary-label{font-size:15px;letter-spacing:-.35px}.summary-chart-link{padding:4px 7px;font-size:11px}.summary-price{font-size:15px}.summary-change{font-size:13.5px}}
+
+/* Summary typography set to 1.2x the original size. */
+.summary-titleline .summary-label{font-size:13.2px}
+.summary-chart-link{font-size:14.4px}
+.summary-price{font-size:14.4px}
+.summary-change{font-size:12px}
+@media(max-width:520px){
+  .summary-titleline .summary-label{font-size:12px}
+  .summary-chart-link{font-size:13.2px}
+  .summary-price{font-size:12px}
+  .summary-change{font-size:10.8px}
+}
