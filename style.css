@@ -141,3 +141,29 @@
 /* M7 및 지정 요약칸: 기존 회색 톤과 어울리는 아주 옅은 녹색 */
 .summary-cell.m7-summary-cell,
 .summary-cell.soft-green-summary-cell{background-color:#f5f8f2!important;border-color:#edf0f5!important}
+
+
+/* 요약 강조칸: 기본 회색보다 살짝 어두운 중성 회색 */
+.summary-cell.m7-summary-cell,
+.summary-cell.soft-green-summary-cell{
+  background-color:#eef1f5!important;
+  border-color:#e2e7ee!important;
+}
+
+/* 차트 버튼: 요약칸보다 한 톤 어두운 밝은 회색 */
+.summary-cell .summary-chart-link{
+  background:#dce3ec!important;
+  color:#465467!important;
+  border:1px solid #cfd8e3!important;
+  box-shadow:none!important;
+}
+.summary-cell .summary-chart-link:active{opacity:.8}
+
+/* 차트 버튼 글자는 검정 대신 밝은 흰색으로 표시 */
+.summary-cell .summary-chart-link{
+  color:#ffffff!important;
+}
+
+
+/* 차트 버튼 글자: 버튼 배경보다 어둡되 검정처럼 강하지 않은 슬레이트 회색 */
+.summary-cell .summary-chart-link{color:#64748b!important}
